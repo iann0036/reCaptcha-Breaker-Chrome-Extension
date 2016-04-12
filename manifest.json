@@ -1,0 +1,23 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "reCaptcha Breaker",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["jquery.js", "content.js"],
+	"all_frames": true
+  }],
+  "background": {
+	"scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs",
+	"activeTab",
+    "webRequest",
+	"webRequestBlocking",
+    "https://www.google.com/recaptcha/api2/payload*",
+	"http://1270.0.1/*"
+  ]
+}

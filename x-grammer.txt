@@ -1,0 +1,19 @@
+<grammar root="numbers" xml:lang="en-US">
+<rule id="numbers">
+<item repeat="5-25">
+  <one-of>
+    <item>one</item>
+    <item>two</item>
+    <item>three</item>
+    <item>four</item>
+    <item>five</item>
+    <item>six</item>
+    <item>seven</item>
+    <item>eight</item>
+    <item>nine</item>
+    <item>zero</item>
+    <item>oh</item>
+  </one-of>
+</item>
+</rule>
+</grammar>
